@@ -1,0 +1,76 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: 0.9rem;
+  padding-left: 0.5em;
+  background-color: rgb(211, 13, 13);
+  color: rgb(255, 255, 255);
+  align-items: end;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+header span {
+  font-size: 0.5rem;
+  display: flex;
+  margin-left: 0.3rem;
+  align-items: flex-end;
+}
+
+.titre2 {
+  display: flex;
+  background-color: rgb(88, 88, 88);
+  color: white;
+  width: 100%;
+  padding: 0.6rem;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+.titre2 h2 {
+  font-style: italic;
+  margin-left: 0.3rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 20%;
+  gap: 1rem;
+}
+.item__article {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+.item__article img {
+  max-width: 100%;
+}
+.item__article h3 {
+  border: 1px solid black;
+}
+.item__article h2 {
+}
+.item__article dfn {
+}
+.item__button {
+  background-color: red;
+  display: flex;
+  align-items: center;
+
+  height: 3rem;
+}
+.item__button p {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.item__button p del {
+  padding-right: 0.2em;
+}
+.item__button p span {
+}
