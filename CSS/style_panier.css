@@ -1,0 +1,136 @@
+html {
+  max-width: 100%;
+}
+body {
+  /* width: 100%; */
+  /* box-sizing: border-box; */
+}
+header {
+  display: flex;
+  width: 100%;
+  padding: 0.9rem;
+  padding-left: 0.5em;
+  background-color: #c80000;
+  color: rgb(255, 255, 255);
+}
+header h1 {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+header span {
+  font-size: 0.5rem;
+  display: flex;
+  margin-left: 0.3rem;
+  align-items: flex-end;
+}
+
+.titre2 {
+  display: flex;
+  background-color: rgb(88, 88, 88);
+  color: white;
+  width: 100%;
+  padding: 0.6rem;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: baseline;
+}
+.titre2 p {
+  font-size: 0.9em;
+}
+.titre2 h2 {
+  font-style: italic;
+  margin-left: 0.3rem;
+}
+
+main {
+  /* border: solid 1px black; */
+  margin: 0px 100px;
+}
+
+.div_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid 1px black; */
+  /* margin-bottom: 20px; */
+  border-bottom: solid 1px rgb(179, 179, 179);
+  padding-bottom: 20px;
+}
+
+main h2 {
+  position: relative;
+  right: 27%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+.form_contact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.choix_livraison {
+  width: 50%;
+}
+
+.livraison {
+  font-size: 13px;
+
+  box-sizing: border-box;
+}
+
+.choix_adresse {
+  width: 50%;
+  font-size: 13px;
+  /* border: solid 1px black; */
+}
+
+.input_adresse {
+  display: flex;
+  flex-direction: column;
+}
+
+.adresse {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+}
+
+legend {
+  font-size: 0.9rem;
+  color: grey;
+  margin: 15px 5px;
+  padding-top: 10px;
+}
+
+.montant {
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px;
+  border: solid 1px rgb(209, 209, 209);
+  border-top: none;
+  margin: 13px 13px;
+}
+
+.button {
+  margin-top: 10px;
+  border-top: solid 1px rgb(209, 209, 209);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(209, 209, 209);
+}
+
+.sold_fixed {
+  position: fixed;
+  top: 50%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0px 5px 5px 0px;
+  text-decoration: none;
+}

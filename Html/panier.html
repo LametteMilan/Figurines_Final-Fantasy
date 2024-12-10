@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style_panier.css" />
+    <title>oFig</title>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>oFig</h1>
+      <span> Figurines et statuettes</span>
+    </header>
+    <section class="titre2">
+      <p>Votre Panier</p>
+      <h2>2 produits</h2>
+    </section>
+    <main>
+      <div class="div_contact">
+        <h2>Préference de livraison</h2>
+
+        <form class="form_contact" action="coordonnes">
+          <div class="choix_livraison">
+            <fieldset class="livraison">
+              <legend>Où souhaitez-vous être livré ?</legend>
+              <input
+                type="radio"
+                id="adresse_courante"
+                name="adresse"
+                value="courante"
+              />
+              <label for="adresse_courante">Mon adresse courante</label>
+              <div class="autre_adresse">
+                <!--pourquoi quand j'enlèvela div du dessus la position des input_radio changent-->
+                <input
+                  type="radio"
+                  id="autre_adresse"
+                  name="adresse"
+                  value="autre"
+                />
+                <label for="autre_adresse">Autre adresse</label>
+              </div>
+              <legend>Options</legend>
+              <div class="checkbox">
+                <input type="checkbox" id="suivi" name="option" value="suivi" />
+                <label for="suivi">Suivi de livraison par sms (inclus)</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="satisfait"
+                  name="option"
+                  value="satifait_ou_rembourser"
+                />
+                <label for="satisfait">Satisfait ou remboursé (+2 euros)</label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="garantie"
+                  name="option"
+                  value="garantie"
+                />
+                <label for="garantie">Garantie 2 ans (+10 euros)</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="choix_adresse">
+            <fieldset class="adresse">
+              <legend>Adresse</legend>
+              <label class="rue" for="rue">Rue</label>
+              <input type="text" id="rue" />
+              <label class="code_postal" for="code_postal">Code postal</label>
+              <input type="text" id="code_postal" />
+              <label for="ville">Ville</label>
+              <input type="text" id="ville" />
+            </fieldset>
+            <legend>Informations complémentaires</legend>
+            <label for="infos">interphone, bâtiment, etc.</label>
+            <input type="text" id="infos" />
+          </div>
+        </form>
+      </div>
+      <div class="montant">
+        <em>Montant total à régler:</em><strong>197€</strong>
+      </div>
+      <div class="button">
+        <button class="continuer">Continuer vos achats</button
+        ><button class="payer">Valider et payer</button>
+      </div>
+    </main>
+    <p class="sold_fixed">SOLDES</p>
+  </body>
 </html>
